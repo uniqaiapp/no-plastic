@@ -134,15 +134,18 @@ class TestHygiene(unittest.TestCase):
                     self.assertIn("UniqAI", line, rel)
 
     def test_readme_utm_and_footer(self):
-        readme = read("README.md")
-        links = re.findall(r"https://uniqai\.app[^\s)\"<>]*", readme)
-        self.assertTrue(links)
-        page_links = [u for u in links if not u.startswith("https://uniqai.app/examples/gen/")]
-        for url in page_links:
-            self.assertIn("utm_source=github", url)
-            self.assertIn("utm_campaign=" + REPO, url)
-        self.assertLessEqual(len(page_links), 3, "at most three UniqAI links per README")
-        self.assertEqual(readme.count("Made by <a href="), 1, "exactly one Made by UniqAI footer")
+        readmes = sorted(f for f in os.listdir(ROOT) if f.startswith("README") and f.endswith(".md"))
+        self.assertIn("README.md", readmes)
+        for rel in readmes:
+            readme = read(rel)
+            links = re.findall(r"https://uniqai\.app[^\s)\"<>]*", readme)
+            self.assertTrue(links, rel)
+            page_links = [u for u in links if not u.startswith("https://uniqai.app/examples/gen/")]
+            for url in page_links:
+                self.assertIn("utm_source=github", url, rel + " " + url)
+                self.assertIn("utm_campaign=" + REPO, url, rel + " " + url)
+            self.assertLessEqual(len(page_links), 3, rel + ": at most three UniqAI links per README")
+        self.assertEqual(read("README.md").count("Made by <a href="), 1, "exactly one Made by UniqAI footer")
 
     def test_required_files_exist(self):
         for rel in ("README.md", "SKILL.md", "AGENTS.md", "LICENSE", "CONTRIBUTING.md", "CHANGELOG.md",

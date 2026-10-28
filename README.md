@@ -18,6 +18,8 @@
 
 </div>
 
+English · [Русский](README.ru.md) · [简体中文](README.zh-CN.md) · [Español](README.es.md) · [Português (BR)](README.pt-BR.md) · [日本語](README.ja.md) · [한국어](README.ko.md)
+
 # no-plastic: fix plastic skin and fake-looking AI portraits
 
 AI portraits look fake for a short list of reasons: poreless skin, a mirror-symmetric face, light from nowhere, bokeh painted on, teal-and-orange grade, no grain. Each one is the model's default, and each has a sentence that overrides it. no-plastic is a Claude Code skill (with Cursor and Codex adapters) that rewrites your image prompt into a photographic brief with those sentences in it, writes edit prompts that change one thing and keep the person, and ships a zero-dependency linter that scores any prompt against the checklist. Written for Flux, Nano Banana, Midjourney and SDXL; the vocabulary is photography, so it carries to the next model too.
