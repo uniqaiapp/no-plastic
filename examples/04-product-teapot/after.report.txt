@@ -1,0 +1,14 @@
+no-plastic lint  examples/04-product-teapot/after.txt
+mode: generate  words: 91    score: 100/100  (A)
+
+coverage
+  [x] subject                  "teapot"
+  [x] composition              "centred", "square frame", "empty space"
+  [x] camera / lens            "90 mm", "lens", "f/8"
+  [x] light                    "softbox", "from the left", "bounce"
+  [x] palette / grade          "True colours", "no colour cast"
+  [x] texture                  "speckled", "speckle", "pits", "unevenness"
+  [x] era / medium             "catalogue", "product photograph"
+  [x] anti-plastic negatives   "not a render", "no CGI"
+
+next: run one pilot image and review it against references/checklist.md before any batch

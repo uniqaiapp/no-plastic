@@ -1,0 +1,24 @@
+no-plastic lint  examples/02-couple-golden-hour/before.txt
+mode: generate  words: 14    score: 0/100  (F)
+
+coverage
+  [ ] subject                  say who or what, with two or three physical facts (age range, hair, clothing, expression); 'a woman' gives the model nothing to hold on to
+  [ ] composition              state the framing (head and shoulders, waist-up, full-body) and where the subject sits in the frame
+  [ ] camera / lens            name the camera and lens so perspective and depth of field are decided: '50 mm at f/2', '85 mm at f/2.8', 'phone main camera, 24 mm equivalent'
+  [ ] light                    describe the light as a photographer would: source, direction, quality ('large soft window light from camera left with a gentle fill')
+  [ ] palette / grade          give the grade one clause: 'gentle filmic grade, creamy highlights, slightly lifted blacks' or 'true-to-life colour, no cast'
+  [ ] texture                  ask for texture explicitly: 'natural skin texture with visible pores', 'fine film grain', 'fabric weave'; models smooth by default
+  [ ] era / medium             anchor the medium and era: 'editorial lifestyle photograph', 'honest phone photo', '1974 Kodachrome slide'; without it the model picks 'render'
+  [ ] anti-plastic negatives   close with what to avoid, phrased as a photographer would: 'natural skin texture, no retouched plastic look, not over-processed'
+
+flags
+  !! quality words           "highly detailed", "photorealistic"  (-16)
+     quality words add no photographic fact and pull toward the CGI look the model was praised for; replace with one camera sentence and one light sentence
+  !  vague light             "beautiful lighting"  (-3)
+     'dramatic' or 'studio' says nothing about direction or size; name the source and where it sits
+  !  empty adjectives        "beautiful", "perfect"  (-6)
+     an adjective the camera cannot execute; swap it for a visible fact (what the hair does, what the shirt is made of)
+  !! too short               "14 words"  (-10)
+     under 15 words the model fills every gap with its default look; a working brief is usually 40-120 words
+
+next: add subject, composition, camera / lens, light; then re-lint and pilot one image

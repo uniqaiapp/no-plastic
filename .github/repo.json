@@ -1,0 +1,26 @@
+{
+  "name": "no-plastic",
+  "description": "Fix plastic skin in AI photos: prompt and negative-prompt patterns for realistic skin texture, pores, film grain and uneven light in Flux, Nano Banana, Midjourney and SDXL portraits. Checklist of 'AI tells' plus a Claude Code skill and Cursor/Codex rules that rewrite your portrait prompt. By UniqAI.",
+  "homepage": "https://uniqai.app/tools/upscaler-enhancer?utm_source=github&utm_medium=readme&utm_campaign=no-plastic",
+  "topics": [
+    "ai-images",
+    "ai-portrait",
+    "realistic-skin",
+    "plastic-skin",
+    "negative-prompts",
+    "flux",
+    "nano-banana",
+    "midjourney",
+    "stable-diffusion",
+    "prompt-engineering",
+    "claude-skills",
+    "agent-skills",
+    "cursor-rules",
+    "uniqai"
+  ],
+  "primary_keyword": "fix plastic skin AI",
+  "social_preview": "assets/social-preview.png",
+  "default_branch": "main",
+  "features": { "issues": true, "discussions": true, "wiki": false, "projects": false },
+  "license": "MIT"
+}

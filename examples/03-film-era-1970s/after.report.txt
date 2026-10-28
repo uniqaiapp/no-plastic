@@ -1,0 +1,14 @@
+no-plastic lint  examples/03-film-era-1970s/after.txt
+mode: generate  words: 116   score: 100/100  (A)
+
+coverage
+  [x] subject                  "in their thirties", "laughing", "70s", "knit"
+  [x] composition              "framing", "upper two thirds", "square frame"
+  [x] camera / lens            "point-and-shoot"
+  [x] light                    "midday sun", "dappled"
+  [x] palette / grade          "Kodachrome", "Saturated", "teal", "faded"
+  [x] texture                  "weathered", "knit", "film grain", "dust"
+  [x] era / medium             "1974", "Kodachrome", "slide photo", "1970s"
+  [x] anti-plastic negatives   "Natural skin", "no retouched plastic look"
+
+next: run one pilot image and review it against references/checklist.md before any batch

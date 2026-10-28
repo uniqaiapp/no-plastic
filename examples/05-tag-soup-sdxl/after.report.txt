@@ -1,0 +1,14 @@
+no-plastic lint  examples/05-tag-soup-sdxl/after.txt
+mode: generate  words: 113   score: 100/100  (A)
+
+coverage
+  [x] subject                  "in her mid-twenties", "freckles", "hair", "cotton"
+  [x] composition              "Head and shoulders", "upper two thirds", "vertical frame"
+  [x] camera / lens            "85 mm", "lens", "f/4"
+  [x] light                    "window light", "from camera left", "gentle fill"
+  [x] palette / grade          "True-to-life colour", "lifted blacks"
+  [x] texture                  "freckles", "strands", "skin texture", "pores"
+  [x] era / medium             "Beauty-editorial", "portrait of", "film"
+  [x] anti-plastic negatives   "negative: smooth skin, airbrushed, doll-like, symmetrical face", "Natural skin", "no retouched plastic look"
+
+next: run one pilot image and review it against references/checklist.md before any batch

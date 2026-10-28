@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Questions and ideas
+    url: https://github.com/uniqaiapp/no-plastic/discussions
+    about: Ask how to adapt a rule to your model, or share a before/after that worked.
+  - name: Private report
+    url: mailto:support@uniqai.app
+    about: Anything you would rather not post publicly.

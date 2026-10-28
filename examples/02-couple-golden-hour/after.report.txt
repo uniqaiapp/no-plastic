@@ -1,0 +1,14 @@
+no-plastic lint  examples/02-couple-golden-hour/after.txt
+mode: generate  words: 112   score: 100/100  (A)
+
+coverage
+  [x] subject                  "in their thirties", "eyes closed", "hair", "skin"
+  [x] composition              "Waist-up", "framing", "upper two thirds", "portrait frame"
+  [x] camera / lens            "50 mm", "lens", "f/2", "shallow depth of field"
+  [x] light                    "golden-hour", "backlight", "rimming", "bounce"
+  [x] palette / grade          "filmic", "colour grade", "creamy highlights", "lifted blacks"
+  [x] texture                  "film grain", "skin texture", "pores", "uneven"
+  [x] era / medium             "Candid", "photograph", "film"
+  [x] anti-plastic negatives   "Natural skin", "no retouched plastic look"
+
+next: run one pilot image and review it against references/checklist.md before any batch

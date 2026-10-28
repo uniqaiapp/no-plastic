@@ -1,0 +1,12 @@
+no-plastic lint  examples/09-edit-selfie-to-headshot/after.txt
+mode: edit      words: 109   score: 100/100  (A)
+
+coverage
+  [x] one named change         "Turn this"
+  [x] identity lock            "Keep the face, features, skin tone, hair, expression and identity exactly as they are"
+  [x] framing lock             "Do not change the framing"
+  [x] no seams / halos         "no smudges", "repeated textures"
+  [x] realism clause           "natural skin texture", "no plastic smoothing", "untouched real photograph"
+  [x] scope limit              "anything not mentioned"
+
+next: run one pilot image and review it against references/checklist.md before any batch

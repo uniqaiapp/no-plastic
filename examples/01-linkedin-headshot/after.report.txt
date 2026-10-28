@@ -1,0 +1,14 @@
+no-plastic lint  examples/01-linkedin-headshot/after.txt
+mode: generate  words: 122   score: 100/100  (A)
+
+coverage
+  [x] subject                  "in her early fifties", "pale skin", "earrings", "blazer"
+  [x] composition              "Head-and-shoulders", "upper two thirds", "vertical frame"
+  [x] camera / lens            "85 mm", "lens", "f/2.8"
+  [x] light                    "key light", "from camera left", "gentle fill", "catchlights"
+  [x] palette / grade          "neutral daylight", "no colour cast"
+  [x] texture                  "skin texture", "pores", "fine lines", "flyaway"
+  [x] era / medium             "headshot"
+  [x] anti-plastic negatives   "Natural skin", "no retouched plastic look", "not over-processed"
+
+next: run one pilot image and review it against references/checklist.md before any batch

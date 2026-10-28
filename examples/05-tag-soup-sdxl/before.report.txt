@@ -1,0 +1,26 @@
+no-plastic lint  examples/05-tag-soup-sdxl/before.txt
+mode: generate  words: 43    score: 0/100  (F)
+
+coverage
+  [x] subject                  "freckles", "hair", "skin"
+  [ ] composition              state the framing (head and shoulders, waist-up, full-body) and where the subject sits in the frame
+  [x] camera / lens            "bokeh", "85mm"
+  [ ] light                    describe the light as a photographer would: source, direction, quality ('large soft window light from camera left with a gentle fill')
+  [ ] palette / grade          give the grade one clause: 'gentle filmic grade, creamy highlights, slightly lifted blacks' or 'true-to-life colour, no cast'
+  [x] texture                  "freckles"
+  [ ] era / medium             anchor the medium and era: 'editorial lifestyle photograph', 'honest phone photo', '1974 Kodachrome slide'; without it the model picks 'render'
+  [x] anti-plastic negatives   "negative: ugly, deformed, bad anatomy, extra fingers"
+
+flags
+  !! quality words           "masterpiece", "best quality", "8k", "award winning"  (-24)
+     quality words add no photographic fact and pull toward the CGI look the model was praised for; replace with one camera sentence and one light sentence
+  !! plastic-skin triggers   "flawless skin", "symmetrical face"  (-16)
+     these words are the plastic look; ask for the opposite: 'natural skin texture with visible pores, slight asymmetry, unretouched'
+  !  vague light             "cinematic lighting"  (-3)
+     'dramatic' or 'studio' says nothing about direction or size; name the source and where it sits
+  !  boilerplate negative list "ugly", "deformed", "bad anatomy", "extra fingers"  (-9)
+     SD1.5-era negative soup; Flux and Nano Banana ignore it and it spends your prompt budget. Keep only negatives that name a look you have actually seen
+  !! tag soup                "comma-separated fragments"  (-8)
+     write sentences a photographer could act on; comma tags were an SD1.5 habit and read as 'render' to current models
+
+next: add composition, light, palette / grade, era / medium; then re-lint and pilot one image

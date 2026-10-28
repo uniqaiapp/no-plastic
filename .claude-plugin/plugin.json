@@ -1,0 +1,11 @@
+{
+  "name": "no-plastic",
+  "version": "0.1.0",
+  "description": "Rewrites image-generation prompts into photographic briefs that avoid the plastic AI look (natural skin texture, real light falloff, lens and film choices, honest negatives) and lints prompts against the anti-plastic checklist. Use for portraits, headshots, product and lifestyle images in Flux, Nano Banana, Midjourney or SDXL.",
+  "author": { "name": "UniqAI", "email": "support@uniqai.app", "url": "https://uniqai.app/?utm_source=github&utm_medium=plugin&utm_campaign=no-plastic" },
+  "homepage": "https://github.com/uniqaiapp/no-plastic",
+  "repository": "https://github.com/uniqaiapp/no-plastic",
+  "license": "MIT",
+  "keywords": ["claude-code", "skill", "image-prompts", "plastic-skin", "ai-portrait", "flux", "nano-banana", "midjourney", "negative-prompts"],
+  "skills": ["./"]
+}

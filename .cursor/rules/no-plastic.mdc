@@ -1,0 +1,7 @@
+---
+description: Rewrite image-generation prompts into photographic briefs that avoid the plastic AI look, and lint prompts against the anti-plastic checklist. Use when the user asks for a portrait, headshot, product or lifestyle image prompt, says a result looks fake, waxy or too smooth, or writes an edit prompt that must keep the person and framing.
+globs:
+alwaysApply: false
+---
+
+@SKILL.md

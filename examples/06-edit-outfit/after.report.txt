@@ -1,0 +1,12 @@
+no-plastic lint  examples/06-edit-outfit/after.txt
+mode: edit      words: 97    score: 100/100  (A)
+
+coverage
+  [x] one named change         "Change"
+  [x] identity lock            "Keep his face, skin, hair, expression, pose, the background and the light exactly as they are"
+  [x] framing lock             "Do not change the framing"
+  [x] no seams / halos         "no smudges", "repeated textures"
+  [x] realism clause           "look real", "untouched real photograph"
+  [x] scope limit              "anything not mentioned"
+
+next: run one pilot image and review it against references/checklist.md before any batch

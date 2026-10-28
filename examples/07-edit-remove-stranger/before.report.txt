@@ -1,0 +1,16 @@
+no-plastic lint  examples/07-edit-remove-stranger/before.txt
+mode: edit      words: 6     score: 5/100  (F)
+
+coverage
+  [x] one named change         "Remove"
+  [ ] identity lock            list what must survive and say 'exactly as they are': face, skin tone, hair edges, expression, clothes, light
+  [ ] framing lock             lock the frame: 'Output the full original frame at the same zoom; do not crop, zoom in or recompose'
+  [ ] no seams / halos         for removals say what fills the hole ('matching sand, sea and sky') and forbid 'smudges, repeated textures, halos or visible seams'
+  [ ] realism clause           say the result must read as an untouched real photograph, natural and not over-processed, no plastic skin
+  [ ] scope limit              close the door on side effects: 'Do not change ... or anything not mentioned'
+
+flags
+  !! too short               "6 words"  (-10)
+     under 15 words the model fills every gap with its default look; a working brief is usually 40-120 words
+
+next: add identity lock, framing lock, no seams / halos, realism clause; then re-lint and pilot one image

@@ -1,0 +1,12 @@
+no-plastic lint  examples/07-edit-remove-stranger/after.txt
+mode: edit      words: 87    score: 100/100  (A)
+
+coverage
+  [x] one named change         "Remove"
+  [x] identity lock            "Keep the woman, her pose, the lighting and everything else exactly as they are"
+  [x] framing lock             "full original frame", "same zoom", "do not crop", "Do not change the framing"
+  [x] no seams / halos         "fill the space", "matching sand", "nothing looks patched", "no smudges"
+  [x] realism clause           "untouched real photograph"
+  [x] scope limit              "and everything else", "anything not mentioned"
+
+next: run one pilot image and review it against references/checklist.md before any batch

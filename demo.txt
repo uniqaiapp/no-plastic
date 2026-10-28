@@ -1,0 +1,11 @@
+$ python3 scripts/lint_prompt.py examples/01-linkedin-headshot/{before,after}.txt
+> no-plastic lint  examples/01-linkedin-headshot/before.txt
+> mode: generate  words: 16    score: {y:0/100}  (F)
+> [ ] light        describe the light as a photographer would: source, direction
+> [ ] texture      ask for texture explicitly: 'natural skin texture with visible pores'
+! !! quality words           "8k", "ultra realistic", "masterpiece"  (-24)
+! !! plastic-skin triggers   "perfect skin"  (-8)
+@wait 700
+> no-plastic lint  examples/01-linkedin-headshot/after.txt
+> mode: generate  words: 122   score: {l:100/100}  (A)
++ next: run one pilot image and review it against references/checklist.md

@@ -1,0 +1,24 @@
+no-plastic lint  examples/04-product-teapot/before.txt
+mode: generate  words: 15    score: 0/100  (F)
+
+coverage
+  [x] subject                  "Teapot"
+  [ ] composition              state the framing (head and shoulders, waist-up, full-body) and where the subject sits in the frame
+  [ ] camera / lens            name the camera and lens so perspective and depth of field are decided: '50 mm at f/2', '85 mm at f/2.8', 'phone main camera, 24 mm equivalent'
+  [ ] light                    describe the light as a photographer would: source, direction, quality ('large soft window light from camera left with a gentle fill')
+  [ ] palette / grade          give the grade one clause: 'gentle filmic grade, creamy highlights, slightly lifted blacks' or 'true-to-life colour, no cast'
+  [ ] texture                  ask for texture explicitly: 'natural skin texture with visible pores', 'fine film grain', 'fabric weave'; models smooth by default
+  [x] era / medium             "photo"
+  [ ] anti-plastic negatives   close with what to avoid, phrased as a photographer would: 'natural skin texture, no retouched plastic look, not over-processed'
+
+flags
+  !! quality words           "4k", "octane render", "highly detailed", "trending on artstation"  (-24)
+     quality words add no photographic fact and pull toward the CGI look the model was praised for; replace with one camera sentence and one light sentence
+  !  vague light             "perfect lighting"  (-3)
+     'dramatic' or 'studio' says nothing about direction or size; name the source and where it sits
+  !  empty adjectives        "perfect"  (-3)
+     an adjective the camera cannot execute; swap it for a visible fact (what the hair does, what the shirt is made of)
+  !  render vocabulary       "render"  (-3)
+     fine if you want an illustration; for a photo these words move the result off the photographic manifold
+
+next: add composition, camera / lens, light, palette / grade; then re-lint and pilot one image

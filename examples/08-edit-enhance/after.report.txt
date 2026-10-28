@@ -1,0 +1,12 @@
+no-plastic lint  examples/08-edit-enhance/after.txt
+mode: edit      words: 96    score: 100/100  (A)
+
+coverage
+  [x] one named change         "Enhance"
+  [x] identity lock            "Keep the man, his expression, the colors and the composition exactly as they are"
+  [x] framing lock             "Do not change the framing"
+  [x] no seams / halos         "no oversharpening halos", "no smudges", "repeated textures"
+  [x] realism clause           "same photo taken with a much better camera", "not over-processed", "natural skin texture", "no plastic skin"
+  [x] scope limit              "anything not mentioned"
+
+next: run one pilot image and review it against references/checklist.md before any batch

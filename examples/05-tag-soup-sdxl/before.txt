@@ -1,0 +1,2 @@
+portrait, woman, 25yo, freckles, red hair, smiling, bokeh, 85mm, cinematic lighting, masterpiece, best quality, ultra detailed, 8k, (flawless skin:1.2), symmetrical face, sharp focus, award winning
+Negative: ugly, deformed, bad anatomy, extra fingers, blurry, low quality, worst quality, jpeg artifacts, watermark, text, logo
