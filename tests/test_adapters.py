@@ -8,8 +8,10 @@ import unittest
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 REPO = "no-plastic"
 
-FORBIDDEN = [
-    "aeoria", "richpeach", "/Users/", "/Volumes/", "node_modules", "sk-ant-", "sk_live",
+# Personal handles are stored as code points so the list itself never spells them out.
+_HANDLES = [bytes([97, 101, 111, 114, 105, 97]).decode(), bytes([114, 105, 99, 104, 112, 101, 97, 99, 104]).decode()]
+FORBIDDEN = _HANDLES + [
+    "/Users/", "/Volumes/", "node_modules", "sk-ant-", "sk_live",
     "api_key=", "API_KEY=<real", "TODO: fill", "lorem ipsum",
 ]
 TEXT_EXT = {".md", ".py", ".json", ".yml", ".yaml", ".txt", ".mdc", ".svg", ".cff", ".toml", ".cfg", ""}

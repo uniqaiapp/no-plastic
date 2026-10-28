@@ -5,7 +5,6 @@ on:
 permissions: { contents: read }
 jobs:
   python:
-    if: ${{ hashFiles('tests/run.py') != '' }}
     runs-on: ubuntu-latest
     strategy: { matrix: { python: ["3.9", "3.12"] } }
     steps:
@@ -13,17 +12,9 @@ jobs:
       - uses: actions/setup-python@v5
         with: { python-version: "${{ matrix.python }}" }
       - run: python3 tests/run.py
-  node:
-    if: ${{ hashFiles('tests/run.mjs') != '' }}
-    runs-on: ubuntu-latest
-    strategy: { matrix: { node: ["18", "22"] } }
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with: { node-version: "${{ matrix.node }}" }
-      - run: node tests/run.mjs
+      - run: python3 scripts/lint_prompt.py --strict --min-score 85 examples/*/after.txt
   size:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: test "$(du -sk . | cut -f1)" -lt 3072   # repo under 3 MB
+      - run: test "$(du -sk . | cut -f1)" -lt 3072   # repo under 3 MB, .git included
